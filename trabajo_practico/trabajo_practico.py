@@ -1,4 +1,4 @@
-def calcular_objetivo_ml(peso, actividad):
+def calcular_objetivo_ml(peso, actividad):  # Esta función calcula la cantidad de agua recomendada por día
 
     base = peso * 35
 
@@ -9,10 +9,9 @@ def calcular_objetivo_ml(peso, actividad):
         return base
 
     elif actividad == "alto":
-        return base * 1.1
-
-
-def estado_hidratacion(consumo, objetivo):
+        return base * 1.1   
+    
+def estado_hidratacion(consumo, objetivo):  # Esta función compara el agua consumida con el objetivo diario
 
     if consumo < objetivo:
         return "Te falta tomar más agua."
@@ -27,9 +26,7 @@ def estado_hidratacion(consumo, objetivo):
 personas = []
 
 continuar = "si"
-
-while continuar == "si":
-
+while continuar == "si":# Esta parte del programa permite ingresar los datos de varias personas,calcular su consumo recomendado de agua y guardar la información.
     try:
         peso = float(input("Ingrese su peso en kg: "))
 
