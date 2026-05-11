@@ -10,6 +10,7 @@ def calcular_objetivo_ml(peso, actividad):  # Esta función calcula la cantidad 
 
     elif actividad == "alto":
         return base * 1.1   
+    #donde se guarda el valor que retorna la funcion
     
 def estado_hidratacion(consumo, objetivo):  # Esta función compara el agua consumida con el objetivo diario
 
